@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface antialiased font-body;
+  }
+}
+
+.circular-progress {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(var(--tw-gradient-from) var(--progress), var(--tw-gradient-to) 0);
+}
